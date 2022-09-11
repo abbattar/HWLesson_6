@@ -95,7 +95,7 @@ double[] IntersectionPoint(double[,] array)
     return intersectionPoint;
 }
 
-if ((array[1,1] - array[0,1] == 0) && (array[1,0] - array[0,0] == 0))
+if ((array[0,1] - array[1,1] == 0) && (array[1,1] - array[0,1] == 0))
 {
     Console.WriteLine("Прямые либо параллельны, либо совпадают");
     return;
